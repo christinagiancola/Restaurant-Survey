@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="survey.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div id="content-box">
+    <div id="heading">
+      <h1 id="title">Restaurant Review Survey</h1>
+      <p id="description">We'd love your feedback regarding your most recent meal with us.</p>
+    </div>
+    <hr>
+
+    <form action="/url-where-you-want-to-submit-form-data" id="survey-form">
+      
+      <div>
+        <label for="name" id="name-label">Guest Name:</label>
+        <input type="text" id="name" name="name" placeholder="---" required>
+      </div>
+      <br>
+      <div>
+        <label for="age">Age:</label>
+        <select id="dropdown" name="age">
+          <option value="not-given">---</option>
+          <option value="15-19">15-19</option>
+          <option value="20-27">20-27</option>
+          <option value="28-35">28-35</option>
+          <option value="36-45">36-45</option>
+          <option value="46-55">46-55</option>
+          <option value="56-64">56-64</option>
+          <option value="65+">65+</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="date">Date of Visit:</label>
+        <input type="date" name="date">
+      </div>
+      <br>
+      <div>
+        <label for="quantity" id="number-label">How many times have you visited this restaurant?</label>
+        <input type="number" id="number" name="quantity" min="1" max="20" placeholder="---"> 
+      </div>
+      <br>
+      <div id="service-type">
+        <p>Please check all that apply to your visit:</p>
+        <input type="checkbox" id="service1" name="service1" value="dine-in">
+        <label for="service1">Dine In</label>
+        <input type="checkbox" id="service2" name="service2" value="take-out">
+        <label for="service2">Take Out</label>
+        <input type="checkbox" id="service3" name="sevice3" value="breakfast">
+        <label for="service3">Breakfast</label>
+        <input type="checkbox" id="service4" name="service4" value="lunch">  
+        <label for="service4">Lunch</label>
+        <input type="checkbox" id="service5" name="service5" value="dinner">
+        <label for="service5">Dinner</label>
+      </div>
+      <br>
+      <div>
+        <label for="server-name">Server Name:</label>
+        <input type="text" id="server-name" name="server-name">
+      </div>
+      <br>
+      <div>
+        <label for="guest-order">What did you order?</label>
+        <br>
+        <textarea name="guest-order" id="guest-order" cols="40" rows="4"></textarea>
+      </div>
+      <br>
+      <div id="radios">
+        <div id="service-quality">
+          <label class="radio-label">Quality of Food:</label>
+          <br>
+          <input type="radio" id="excellent" name="food-qual" value="excellent">
+          <label for="excellent">Excellent</label>
+          <input type="radio" id="good" name="food-qual" value="good">
+          <label for="good">Good</label>
+          <input type="radio" id="fair" name="food-qual" value="fair">
+          <label for="fair">Fair</label>
+          <input type="radio" id="poor" name="food-qual" value="poor">
+          <label for="poor">Poor</label>
+        </div>
+        <br>
+        <div id="portion-size">
+          <label class="radio-label">Portion Size:</label>
+          <br>
+          <input type="radio" id="excellent" name="portion-size" value="excellent">
+          <label for="excellent">Excellent</label>
+          <input type="radio" id="good" name="portion-size" value="good">
+          <label for="good">Good</label>
+          <input type="radio" id="fair" name="portion-size" value="fair">
+          <label for="fair">Fair</label>
+          <input type="radio" id="poor" name="portion-size" value="poor">
+          <label for="poor">Poor</label>
+        </div>
+        <br>
+        <div id="cleanliness">
+          <label class="radio-label">Cleanliness:</label>
+          <br>
+          <input type="radio" id="excellent" name="cleanliness" value="excellent">
+          <label for="excellent">Excellent</label>
+          <input type="radio" id="good" name="cleanliness" value="good">
+          <label for="good">Good</label>
+          <input type="radio" id="fair" name="cleanliness" value="fair">
+          <label for="fair">Fair</label>
+          <input type="radio" id="poor" name="cleanliness" value="poor">
+          <label for="poor">Poor</label>
+        </div>
+        <br>
+        <div id="service">
+          <label class="radio-label">Overall Service:</label>
+          <br>
+          <input type="radio" id="excellent" name="service-qual" value="excellent">
+          <label for="excellent">Excellent</label>
+          <input type="radio" id="good" name="service-qual" value="good">
+          <label for="good">Good</label>
+          <input type="radio" id="fair" name="service-qual" value="fair">
+          <label for="fair">Fair</label>
+          <input type="radio" id="poor" name="service-qual" value="poor">
+          <label for="poor">Poor</label>
+        </div>
+      </div>
+      <br>
+      <div>
+        <label for="comments">Additional comments:</label>
+        <br>
+        <textarea name="comments" id="guest-comment" cols="40" rows="6"></textarea>
+      </div>
+      <br>
+      <div>
+        <label for="email" id="email-label">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="---" required>
+      </div>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+  
+</body>
+</html> 
